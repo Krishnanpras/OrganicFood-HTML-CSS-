@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> navigation</title>
+<style>
+        .moblie-menu ul{
+            padding: 0; 
+         }
+         .moblie-menu ul li{
+             list-style-type: none;
+             padding: 12px 12px;
+         }
+         .moblie-menu ul li a{
+             text-decoration: none;
+             color: black;
+         }
+ .moblie-menu {
+    transform: translate(-100%,0);
+     background-color: #dbdbdb;
+ }
+         .moblie-menu {
+             display: none;
+         }
+         .menu:hover + .moblie-menu {
+          display: block;
+          position: absolute;
+          top: 50px;
+          left: 0px  ;
+          z-index: 1;
+          transform: translate(0%);
+         }
+ 
+ .menu{
+   /* width: 40px; */
+   position: relative;
+    z-index: 1;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+    
+<div class="menu">
+
+    
+ <a href="#"><img src="../images/icons8-menu-50.png" alt="menu" ></a>
+
+   
+
+</div>
+
+<div class="moblie-menu">
+    <ul>
+        <li><a href="#"> HOME  </a></li>
+        <li><a href="#"> ABOUT  </a></li>
+        <li><a href="#"> SERVICES </a></li>
+        <li><a href="#"> PRODUCTS </a></li>
+        <li><a href="#"> BRANCH </a></li>
+        <li><a href="#"> CONTACT US </a></li>
+    </ul>
+    </div>
+
+
+
+
+</body>
+</html>
